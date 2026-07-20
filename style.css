@@ -556,7 +556,7 @@ a:active,
 
 @media (max-width: 768px) and (orientation: portrait) {
   .rotate-to-view::before {
-    content: "PLEASE ROTATE YOUR PHONE TO LANDSCAPE TO VIEW THE MAP.";
+    content: "Niagara Industrial & Radiological History.<br>PLEASE ROTATE YOUR PHONE TO LANDSCAPE TO VIEW THE MAP.";
     display: block;
     width: calc(100vw - 50px);
     max-width: 420px;
@@ -565,9 +565,9 @@ a:active,
     border: 5px solid #fff !important;
     box-sizing: border-box;
 
-    font-size: 2.3rem;
-    font-weight: 900;
-    letter-spacing: 0.12em;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.10em;
     line-height: 1.35;
     text-align: center;
   }

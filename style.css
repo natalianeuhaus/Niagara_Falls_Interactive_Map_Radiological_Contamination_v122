@@ -575,36 +575,45 @@ a:active,
 
 @media (max-width: 768px) and (orientation: portrait) {
 
-  .rotate-to-view {
-    flex-direction: column;
-    gap: 28px;
-  }
-
   .rotate-phone-icon {
-    font-size: 5rem;
-    font-weight: 300;
-    line-height: 1;
-    color: #fff;
-    transform-origin: center;
-    animation: rotatePhone 2.2s ease-in-out infinite;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+    animation: plusToX 2.2s ease-in-out infinite;
   }
 
-  @keyframes rotatePhone {
-    0% {
+  .rotate-phone-icon::before,
+  .rotate-phone-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 76px;
+    height: 8px;
+    background: #fff;
+    transform-origin: center;
+  }
+
+  /* Horizontal line of the plus */
+  .rotate-phone-icon::before {
+    transform: translate(-50%, -50%);
+  }
+
+  /* Vertical line of the plus */
+  .rotate-phone-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  @keyframes plusToX {
+    0%,
+    30% {
       transform: rotate(0deg);
     }
 
-    35% {
-      transform: rotate(0deg);
-    }
-
-    70% {
-      transform: rotate(90deg);
-    }
-
+    65%,
     100% {
-      transform: rotate(90deg);
+      transform: rotate(45deg);
     }
   }
 }
-

@@ -15,7 +15,7 @@ GitHub Pages package for the Niagara industrial and radiological history map.
 Upload all files to the repository root and publish GitHub Pages from the `main` branch and `/ (root)`.
 
 
-## v0.83 waterway correction
+## v0.83 waterway correction 
 Two Mile Creek was shifted west to follow the mapped channel beside Two Mile Creek Road, under I-290, through Sheridan Park, and toward Kenmore Avenue. Rattlesnake Creek was redrawn as the western tributary through Tonawanda North Unit 2.
 
 

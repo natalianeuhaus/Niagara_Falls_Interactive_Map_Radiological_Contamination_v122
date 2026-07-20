@@ -580,7 +580,7 @@ a:active,
     width: 80px;
     height: 80px;
     flex: 0 0 80px;
-    animation: plusToX 2.2s ease-in-out infinite;
+   animation: plusToX 2.2s linear infinite;
   }
 
   .rotate-phone-icon::before,
@@ -606,18 +606,12 @@ a:active,
   }
 
 @keyframes plusToX {
-  0%,
-  25% {
-    transform: rotate(45deg); /* X */
-  }
-
-  50%,
-  75% {
-    transform: rotate(0deg); /* Plus */
+  0% {
+    transform: rotate(45deg);
   }
 
   100% {
-    transform: rotate(45deg); /* Return to X */
+    transform: rotate(405deg);
   }
 }
   }

@@ -605,15 +605,19 @@ a:active,
     transform: translate(-50%, -50%) rotate(90deg);
   }
 
- @keyframes plusToX {
+@keyframes plusToX {
   0%,
-  30% {
-    transform: rotate(45deg);
+  25% {
+    transform: rotate(45deg); /* X */
   }
 
-  65%,
+  50%,
+  75% {
+    transform: rotate(0deg); /* Plus */
+  }
+
   100% {
-    transform: rotate(0deg);
+    transform: rotate(45deg); /* Return to X */
   }
 }
   }

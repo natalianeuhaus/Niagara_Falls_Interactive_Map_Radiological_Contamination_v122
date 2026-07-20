@@ -22,7 +22,7 @@ Two Mile Creek was shifted west to follow the mapped channel beside Two Mile Cre
 ## v0.83 waterway update
 - Rattlesnake Creek geometry retained.
 - Two Mile Creek now winds through Sheridan Park and Sheridan Park Golf Course and bends southeast toward the former Linde area.
-- Waterway lines remain approximate documentary overlays, not surveyed GIS centerlines.
+- Waterway lines remain approximate documentary overlays, not surveyed GIS centerlines. 
 
 
 ## v0.83

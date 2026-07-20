@@ -605,15 +605,16 @@ a:active,
     transform: translate(-50%, -50%) rotate(90deg);
   }
 
-  @keyframes plusToX {
-    0%,
-    30% {
-      transform: rotate(0deg);
-    }
+ @keyframes plusToX {
+  0%,
+  30% {
+    transform: rotate(45deg);
+  }
 
-    65%,
-    100% {
-      transform: rotate(45deg);
-    }
+  65%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
   }
 }

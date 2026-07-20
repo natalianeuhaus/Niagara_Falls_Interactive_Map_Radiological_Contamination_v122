@@ -580,7 +580,7 @@ a:active,
     width: 80px;
     height: 80px;
     flex: 0 0 80px;
-   animation: plusToX 2.2s linear infinite;
+   animation: plusToX 2.2s linear 1 forwards;
   }
 
   .rotate-phone-icon::before,

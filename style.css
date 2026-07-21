@@ -623,3 +623,27 @@ a:active,
     }
   }
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+  .rotate-to-view {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+  }
+
+  .rotate-message {
+    order: 2;
+    flex: 0 0 auto;
+  }
+
+  .rotate-phone-icon:first-child {
+    order: 1;
+  }
+
+  .rotate-phone-icon:last-child {
+    order: 3;
+  }
+}

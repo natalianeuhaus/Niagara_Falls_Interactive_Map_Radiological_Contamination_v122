@@ -607,7 +607,7 @@ a:active,
 @media (max-width: 900px) and (orientation: landscape) {
 
   .leaflet-control-layers-expanded {
-    width: 260px !important;
+    width: 230px !important;
     max-width: 260px !important;
     max-height: calc(100vh - 120px) !important;
     overflow-y: auto !important;

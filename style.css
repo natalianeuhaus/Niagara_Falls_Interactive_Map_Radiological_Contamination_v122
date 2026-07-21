@@ -634,3 +634,14 @@ a:active,
 .leaflet-overlay-pane canvas {
   z-index: 1 !important;
 }
+
+/* Keep TENORM / radioactive-waste markers above factory markers */
+.leaflet-marker-icon.radioactive-waste-icon {
+  z-index: 5000 !important;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.radioactive-waste-icon * {
+  pointer-events: auto !important;
+}

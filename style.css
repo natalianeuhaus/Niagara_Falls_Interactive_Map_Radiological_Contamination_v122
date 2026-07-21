@@ -565,3 +565,40 @@ a:active,
     }
   }
 }
+
+/* Mobile landscape panel fix */
+@media (max-width: 900px) and (orientation: landscape) {
+
+  .panel {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 54vw;
+    max-width: 520px;
+    height: calc(100vh - 16px);
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .view {
+    min-height: 0;
+    overflow-y: auto;
+  }
+
+  .tabs {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .tabs button {
+    padding: 9px 3px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  #map {
+    width: 100vw;
+    height: 100vh;
+    min-height: 0;
+  }
+}

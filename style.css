@@ -624,3 +624,13 @@ a:active,
     white-space: normal;
   }
 }
+
+/* Keep aerial survey images beneath hotspots and survey graphics */
+.leaflet-overlay-pane .leaflet-image-layer {
+  z-index: 0 !important;
+}
+
+.leaflet-overlay-pane svg,
+.leaflet-overlay-pane canvas {
+  z-index: 1 !important;
+}

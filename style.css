@@ -482,102 +482,44 @@ a:active,
 }
 
 
-/* Smaller phones */
-@media (max-width: 480px) {
-
-  .sidebar,
-  .left-panel,
-  #sidebar {
-    padding: 13px;
-  }
-
-  .site-title,
-  .header h1,
-  h1 {
-    font-size: 21px;
-  }
-
-  .tabs,
-  .tab-buttons,
-  .navigation-tabs {
-    grid-template-columns: 1fr;
-  }
-
-  #map,
-  .map {
-    height: 60vh;
-    min-height: 420px;
-  }
-
-  .leaflet-control-zoom {
-    transform: scale(0.9);
-    transform-origin: top left;
-  }
-
-  .radiation-guide-button,
-  .radiation-guide-btn,
-  #radiation-guide-button {
-    max-width: 125px;
-    font-size: 12px;
-  }
-}
-
 /* Rotate-phone message */
 .rotate-to-view {
   display: none;
 }
 
 @media (max-width: 768px) and (orientation: portrait) {
+
   .rotate-to-view {
     position: fixed;
     inset: 0;
     z-index: 99999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px;
+
     padding: 30px;
     box-sizing: border-box;
     background: #000;
     color: #fff;
     text-align: center;
-    font-size: 20px;
-    line-height: 1.4;
   }
 
-  .rotate-to-view::before {
-    content: "Please rotate your phone to landscape to view the map.";
-    max-width: 280px;
-  }
-
-  body > *:not(.rotate-to-view) {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-  .rotate-to-view::before {
-    content: "NIAGARA INDUSTRIAL & RADIOLOGICAL HISTORY MAP.\A\A ROTATE YOUR PHONE TO LANDSCAPE TO VIEW THE MAP.";
-    display: block;
+  .rotate-message {
     width: calc(100vw - 50px);
     max-width: 420px;
     padding: 28px 22px;
-
-    border: 5px solid #fff !important;
+    border: 5px solid #fff;
     box-sizing: border-box;
 
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.10em;
     line-height: 1.35;
     text-align: center;
-  }
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-
-  .rotate-to-view {
-    flex-direction: column;
-    gap: 18px;
   }
 
   .rotate-phone-icon {
@@ -585,12 +527,7 @@ a:active,
     width: 80px;
     height: 80px;
     flex: 0 0 80px;
-    animation: plusToX 2.2s linear 1 forwards;
-  }
-
-  .rotate-message::before {
-    content: "NIAGARA INDUSTRIAL & RADIOLOGICAL HISTORY MAP.\A\A ROTATE YOUR PHONE TO LANDSCAPE TO VIEW THE MAP.";
-    white-space: pre-line;
+    animation: rotatePlus 2.2s linear 1 forwards;
   }
 
   .rotate-phone-icon::before,
@@ -601,7 +538,7 @@ a:active,
     left: 50%;
     width: 42px;
     height: 6px;
-    background: #fff !important;
+    background: #fff;
     transform-origin: center;
   }
 
@@ -613,37 +550,17 @@ a:active,
     transform: translate(-50%, -50%) rotate(90deg);
   }
 
-  @keyframes plusToX {
-    0% {
+  body > *:not(.rotate-to-view) {
+    visibility: hidden;
+  }
+
+  @keyframes rotatePlus {
+    from {
       transform: rotate(0deg);
     }
 
-    100% {
+    to {
       transform: rotate(360deg);
     }
-  }
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-
-  .rotate-to-view {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 18px !important;
-  }
-
-  .rotate-message {
-    order: 2;
-    flex: 0 0 auto;
-  }
-
-  .rotate-phone-icon:first-child {
-    order: 1;
-  }
-
-  .rotate-phone-icon:last-child {
-    order: 3;
   }
 }

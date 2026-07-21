@@ -849,7 +849,7 @@ function aerialSurveyPopup(title,isotope,range,detail){
  {center:[43.098,-78.935],radius:620,color:"#B33A1D",fill:"#D85B2D",title:"Airport-area radium anomaly — working area B",isotope:"Ra-226 indicated by Bi-214",range:"Aerial anomaly above local background of approximately 8–10 µR/h.",detail:"Broad interpretive placement based on the airport figure."},
  {center:[43.145,-79.010],radius:1050,color:"#B33A1D",fill:"#D85B2D",title:"Power-reservoir radium anomaly — working area A",isotope:"Ra-226 indicated by Bi-214",range:"The reservoir figure includes categories extending to approximately 17–25 µR/h.",detail:"Broad interpretive placement around the power reservoir and nearby land."},
  {center:[43.137,-78.989],radius:850,color:"#B33A1D",fill:"#D85B2D",title:"Power-reservoir radium anomaly — working area B",isotope:"Ra-226 indicated by Bi-214",range:"Aerial anomaly above local background of approximately 7–10 µR/h.",detail:"Broad interpretive placement based on the reservoir figure."}
-].forEach(a=>{const l=L.circle(a.center,{radius:a.radius,color:a.color,weight:2,fillColor:a.fill,fillOpacity:.20}).bindPopup(aerialSurveyPopup(a.title,a.isotope,a.range,a.detail)).addTo(aerial1979Layer);aerialMapLayers.push(l)});
+].forEach(a=>{const l=L.circle(a.center,{radius:a.radius,color:a.color,weight:2,fillColor:a.fill,fillOpacity:.20,interactive:false}).bindPopup(aerialSurveyPopup(a.title,a.isotope,a.range,a.detail)).addTo(aerial1979Layer);aerialMapLayers.push(l)});
 
 const aerial2023BoundaryLayer=L.layerGroup().addTo(map);
 const aerial2023Source="https://dec.ny.gov/news/press-releases/2024/6/dec-and-epa-announce-june-24-resumption-of-aircraft-based-survey-of-erie-and-niagara-counties";

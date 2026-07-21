@@ -608,7 +608,7 @@ a:active,
 
   .leaflet-control-layers-expanded {
     width: 230px !important;
-    max-width: 260px !important;
+    max-width: 230px !important;
     max-height: calc(100vh - 120px) !important;
     overflow-y: auto !important;
     box-sizing: border-box;

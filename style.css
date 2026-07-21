@@ -645,3 +645,8 @@ a:active,
 .radioactive-waste-icon * {
   pointer-events: auto !important;
 }
+
+/* Let clicks pass through the 1979 aerial-survey footprint interior */
+.leaflet-overlay-pane svg path[stroke="#4d4d4d"][fill="#777"] {
+  pointer-events: stroke !important;
+}
